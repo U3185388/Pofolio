@@ -1,0 +1,382 @@
+/*----------The Cascading Style Sheet for Churchill House----------*/
+
+/*----------Edit by Jacob Hong(3185388), student in the Faculty of Arts & Design, University of Canberra.----------*/
+
+
+
+
+/*----------The entire design of the web, desktop first----------*/
+
+html{
+    font-size: 10px;
+}
+
+
+/*-----The header-----*/
+
+header{
+    list-style: none;
+    box-sizing: border-box;
+    font-family: verdana;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+/*--The navigation--*/
+
+nav{
+    background: #ccc7ff;
+    height: 8rem;
+}
+
+label.logo{
+    padding: 0 2rem;
+}
+
+#check{ /*--Hidding the checkbox--*/
+    display: none;
+}
+
+nav ul{
+    float: right;
+    margin-right: 2rem;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 6rem;
+    margin: 0 1rem;
+}
+
+nav ul li a{
+    color: #706D8C;
+    font-size: 2rem;
+    padding: 0.7rem 1.3rem;
+    border-radius: 0.3rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+a.active,a:hover{ /*---Show current page---*/
+    background-color: #beb9ed;
+    transition: .5s;
+}
+
+
+/*-----The content-----*/
+
+body{
+    background-color: #8CBDB9;
+    font-family: arial, helvetica, sans-serif;
+}
+
+.home{ /*--The home title image(none)--*/
+    min-height: 7rem;
+}
+
+.structure{ /*--The structure title image--*/
+    min-height: 55rem;
+    background-image: url(../images/structure/churchill-house-11.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.history{ /*--The history title image--*/
+    min-height: 55rem;
+    background-image: url(../images/history/r0_230_2542_1666_w1200_h678_fmax.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.archietect{ /*--The architect title image--*/
+    min-height: 55rem;
+    background-image: url(../images/architect/extra2-robin%20boyd%20portrait-copyright-Mark-Strizic.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.wrapper1{ /*--The first content wrapper--*/
+    background-color: #AAE6E1;
+    padding: 1rem 13rem;
+}
+
+.wrapper1 img{ /*---The image format in first wrapper, put in left---*/
+    max-width: 50rem;
+    background-color: white;
+    padding: 1rem;
+    float: left;
+}
+
+.wrapper2{ /*--The second content wrapper--*/
+    background-color: #AAE6E1;
+    padding: 1rem 13rem;
+}
+
+.wrapper2 img{ /*---The image format in first wrapper, put in right---*/
+    max-width: 30rem;
+    background-color: white;
+    padding: 1rem;
+    float: right;
+}
+
+main p{ /*--The format of content--*/
+    font-size: 2.5rem;
+    background-color: white;
+    padding: 1rem;
+    letter-spacing: 0.14rem;
+    line-height: 3rem;
+}
+
+h2{ /*--The format of each title--*/
+    background-color: white;
+    font-size: 4rem;
+    border-bottom: 0.2rem solid black;
+    padding-bottom: 2rem;
+    letter-spacing: 0.2rem;
+    padding: 1.3rem;
+}
+
+
+/*-----The footer-----*/
+
+footer{
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.back{ /*--The back to top icon--*/
+    float: right;
+    margin-top: -4.8rem;
+}
+
+
+
+/*----------The entire responsive code----------*/
+
+
+/*-----Desktop-----*/
+
+@media screen and (min-width: 1920px){ /*--For 2K and higher resolution screen--*/
+    nav ul li a{
+        font-size: 2.5rem;
+    }
+    h2{
+      font-size: 5rem;  
+    }
+    main p{
+        font-size: 3rem;
+        line-height: 4rem; 
+    }
+    .structure{ 
+        min-height: 75rem;
+    }
+    .history{ 
+        min-height: 75rem;
+    }
+    .archietect{ 
+        min-height: 75rem;
+    }
+/*--Matching graphics and text--*/
+}
+
+
+@media screen and (min-width:1025px) and (max-width: 1200px){ /*--For small screen--*/
+    nav{
+        height: 6rem;
+    }
+    nav ul li a{
+        font-size: 1.5rem;
+    }
+/*--Adjusting the navigation--*/
+    
+     header img{
+        max-width: 25rem;
+    }
+/*--Adjusting the logo--*/
+    
+    h2{
+      font-size: 3rem;  
+    }
+    main p{
+        font-size: 1.5rem;
+        letter-spacing: 0.05rem;
+        line-height: 2.5rem; 
+    }
+/*--Adjusting the font size of content--*/
+    
+    .home{ 
+        min-height: 5rem;
+    }
+    .structure{ 
+        min-height: 40rem;
+    }
+    .history{ 
+        min-height: 40rem;
+    }
+    .archietect{ 
+        min-height: 40rem;
+    }
+/*--Adjusting the title image--*/
+    
+/*--Matching graphics, text and navigation--*/
+}
+
+
+/*-----Tablet-----*/
+
+@media screen and (min-width: 621px) and (max-width: 1024px){
+    nav{
+        height: 5rem;
+    }
+    nav ul{
+        margin-right: none;
+    }
+    nav ul li{
+        line-height: 5rem;
+        margin: 0;
+    }
+    nav ul li a{
+        font-size: 1.2rem;
+    }
+     header img{
+        max-width: 20rem;
+    }
+/*--Adjusting the navigation--*/
+    
+    h2{
+      font-size: 3rem;  
+    }
+    main p{
+        font-size: 1.5rem;
+        letter-spacing: 0.05rem;
+        line-height: 2.5rem; 
+    }
+    .wrapper1{
+        margin-top: 4rem;
+        padding: 1rem 6rem;
+    }
+    .wrapper1 img{
+        max-width: 30rem;
+    }
+    .wrapper2{
+        padding: 1rem 6rem;
+    }
+    .wrapper2 img{
+        max-width: 18rem;
+    }
+
+/*--Adjusting the content--*/
+    
+    footer{
+        font-size: 1.5rem;
+    }
+    footer img{
+        max-width: 5rem;
+    }
+    .back{
+        margin-top:-4rem;
+    }
+/*--Adjusting the footer--*/
+    
+    .home{ 
+        min-height: 0rem;
+    }
+    .structure{ 
+        min-height: 0rem;
+    }
+    .history{ 
+        min-height: 0rem;
+    }
+    .archietect{ 
+        min-height: 0rem;
+    }
+/*--Cancel the title image--*/
+    
+/*--Removing the title images; Matching graphics, text and navigation--*/
+}
+
+/*-----The mobile-----*/
+
+@media screen and (max-width: 620px){
+    nav{
+        height: 5rem;
+    }
+    ul{
+        position: fixed;
+        width: 10rem;
+        height: 25rem;
+        background: #ccc7ff;
+        text-align: center;
+        top: 5rem;
+        left: -100%;
+        transition: all 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 0;
+        transition: all 0.5s;
+    }
+    nav ul li a{
+        font-size: 1.2rem;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+     header img{
+        max-width: 20rem;
+    }
+/*--Hidding the navigation, open with logo--*/
+    
+    h2{
+      font-size: 2rem;  
+    }
+    main p{
+        font-size: 1.6rem;
+        background-color: white;
+        letter-spacing: 0.05rem;
+        line-height: 2.5rem; 
+    }
+    .wrapper1{
+        margin-top: 4rem;
+        padding: 1rem 1rem;
+    }
+    .wrapper1 img{
+        max-width: 20rem;
+    }
+    .wrapper2{
+        padding: 1rem 1rem;
+    }
+    .wrapper2 img{
+        max-width: 8rem;
+    }
+/*--Adjusting the content---*/
+    
+    footer{
+        font-size: 1rem;
+    }
+    footer img{
+        max-width: 4rem;
+    }
+    .back{
+        margin-top:-3rem;
+    }
+/*--Adjusting the footer--*/
+   
+    .home{ 
+        min-height: 0rem;
+    }
+    .structure{ 
+        min-height: 0rem;
+    }
+    .history{ 
+        min-height: 0rem;
+    }
+    .archietect{ 
+        min-height: 0rem;
+    }
+/*--Cancel the title image--*/
+    
+/*--Remastering the navigation; Removing the title images; Matching graphics, text--*/
+}
