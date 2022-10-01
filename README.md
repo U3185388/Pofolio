@@ -1,10 +1,10 @@
 # Website Portfolio by Jacob Hong
-
-<br>
+<br>Welcome！
 ## Code website
-This is a local website made entirely of HTML and CSS, feel free to check it out.
-<br>
+<br>This is a local website made entirely of HTML and CSS, feel free to check it out.
 ## Framework website
+Here will show how to open the website
+<br>
 Use `cd web-app` on the terminal to locate the root, and choose any way to start hosting:
 ```
 yarn dev
